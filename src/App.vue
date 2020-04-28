@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <reverseString  :message="'egassem desrever a si siht'" />
+    <reverseString  :message="'a different message to reverse'" />
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import reverseString from '@mimooo/vue-reverse-str-button'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    reverseString
   }
 }
 </script>
